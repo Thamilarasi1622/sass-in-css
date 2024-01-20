@@ -1,0 +1,86 @@
+
+//variables _
+$primary-color: red;
+$font-family: "Roboto",sans-serif;
+//Math in sass
+//$base-font-size:1rem;
+
+//$font-size-sm: $base-font-size * 0.75;
+//$font-size-lg: $base-font-size * 1.5;
+//$font-size-xl: $base-font-size * 2;
+//$font-size-xxl: $base-font-size * 3;
+/*@use "sass:math";
+@debug "Testing Debug SASS";
+@debug 12px+21;
+@debug 20%*5;
+@debug 32px-2px;
+//@debug 32px-2rem;
+//@debug math.max(23px,21px,12px);
+@debug math.ceil(2.2);
+@debug math.floor(4.8);
+@debug math.round(4.8);
+@debug math.abs(-32);
+@debug math.sqrt(81);
+@debug math.pow(3,2);
+@debug math.is-unitless(100rem);
+@debug math.is-unitless(100);
+@debug math.unit(100);
+@debug math.unit(100rem);
+@debug math.unit(10rem*2rem);
+@debug 25rem/5rem;
+@debug math.div(24,2);
+@debug math.random(11);
+@debug math.percentage(0.4);
+
+//Maps
+$colors: (
+    "primary":#0d6efd,
+    "secondary": #198754,
+    "danger": #ea162e,
+    "warning": #ffc107,
+    );
+    @debug map-get($map: $colors, $key:"primary" );
+    @debug map-has-key($map: $colors, $key:  "secondary");
+    @debug map-has-key($map: $colors, $key:  "info");
+    //$@debug map-remove($map: $colors, $keys: "secondary");
+    //$@debug map-merge($map: $colors, $keys: 
+    //$("info":#0dcaf0));  
+*/
+
+     //each loop
+    $colors: (
+        "primary":#0d6efd,
+        "success":#198754,
+        "secondary": #198754,
+        "danger": #ea162e,
+        "warning": #ffc107,
+        );
+     //each control directive
+     @each $key,$val in $colors{
+        .text-#{$key}{
+            color: $val;
+        }
+        .bg-#{$key}{
+        background-color: $val;
+        }
+
+        @for $i from 1 through 3{
+          .text-#{$key}-light-#{$i}{
+          color: lighten($val,$i*10);
+        }
+        .bg-#{$key}-light-#{$i}{
+           background-color: lighten($val,$i*10);
+          }
+          @for $i from 1 through 3{
+            .text-#{$key}-dark-#{$i}{
+            color: darken($val,$i*5);
+          }
+          .bg-#{$key}-dark-#{$i}{
+             background-color: darken($val,$i*5);
+            }
+     }
+     .text-white{
+        color: #fff;
+        }
+    }
+}

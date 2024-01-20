@@ -1,0 +1,787 @@
+/*@use "sass:math";
+@debug "Testing Debug SASS";
+@debug 12px+21;
+@debug 20%*5;
+@debug 32px-2px;
+//@debug 32px-2rem;
+//@debug math.max(23px,21px,12px);
+@debug math.ceil(2.2);
+@debug math.floor(4.8);
+@debug math.round(4.8);
+@debug math.abs(-32);
+@debug math.sqrt(81);
+@debug math.pow(3,2);
+@debug math.is-unitless(100rem);
+@debug math.is-unitless(100);
+@debug math.unit(100);
+@debug math.unit(100rem);
+@debug math.unit(10rem*2rem);
+@debug 25rem/5rem;
+@debug math.div(24,2);
+@debug math.random(11);
+@debug math.percentage(0.4);
+
+//Maps
+$colors: (
+    "primary":#0d6efd,
+    "secondary": #198754,
+    "danger": #ea162e,
+    "warning": #ffc107,
+    );
+    @debug map-get($map: $colors, $key:"primary" );
+    @debug map-has-key($map: $colors, $key:  "secondary");
+    @debug map-has-key($map: $colors, $key:  "info");
+    //$@debug map-remove($map: $colors, $keys: "secondary");
+    //$@debug map-merge($map: $colors, $keys: 
+    //$("info":#0dcaf0));  
+*/
+.text-primary {
+  color: #0d6efd;
+}
+
+.bg-primary {
+  background-color: #0d6efd;
+}
+
+.text-primary-light-1 {
+  color: #408cfd;
+}
+
+.bg-primary-light-1 {
+  background-color: #408cfd;
+}
+
+.text-primary-dark-1 {
+  color: #0262ef;
+}
+
+.bg-primary-dark-1 {
+  background-color: #0262ef;
+}
+
+.text-primary-dark-2 {
+  color: #0257d5;
+}
+
+.bg-primary-dark-2 {
+  background-color: #0257d5;
+}
+
+.text-primary-dark-3 {
+  color: #024dbc;
+}
+
+.bg-primary-dark-3 {
+  background-color: #024dbc;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary-light-2 {
+  color: #72abfe;
+}
+
+.bg-primary-light-2 {
+  background-color: #72abfe;
+}
+
+.text-primary-dark-1 {
+  color: #0262ef;
+}
+
+.bg-primary-dark-1 {
+  background-color: #0262ef;
+}
+
+.text-primary-dark-2 {
+  color: #0257d5;
+}
+
+.bg-primary-dark-2 {
+  background-color: #0257d5;
+}
+
+.text-primary-dark-3 {
+  color: #024dbc;
+}
+
+.bg-primary-dark-3 {
+  background-color: #024dbc;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary-light-3 {
+  color: #a5c9fe;
+}
+
+.bg-primary-light-3 {
+  background-color: #a5c9fe;
+}
+
+.text-primary-dark-1 {
+  color: #0262ef;
+}
+
+.bg-primary-dark-1 {
+  background-color: #0262ef;
+}
+
+.text-primary-dark-2 {
+  color: #0257d5;
+}
+
+.bg-primary-dark-2 {
+  background-color: #0257d5;
+}
+
+.text-primary-dark-3 {
+  color: #024dbc;
+}
+
+.bg-primary-dark-3 {
+  background-color: #024dbc;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success {
+  color: #198754;
+}
+
+.bg-success {
+  background-color: #198754;
+}
+
+.text-success-light-1 {
+  color: #21b26f;
+}
+
+.bg-success-light-1 {
+  background-color: #21b26f;
+}
+
+.text-success-dark-1 {
+  color: #157147;
+}
+
+.bg-success-dark-1 {
+  background-color: #157147;
+}
+
+.text-success-dark-2 {
+  color: #115c39;
+}
+
+.bg-success-dark-2 {
+  background-color: #115c39;
+}
+
+.text-success-dark-3 {
+  color: #0d462c;
+}
+
+.bg-success-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success-light-2 {
+  color: #2ed889;
+}
+
+.bg-success-light-2 {
+  background-color: #2ed889;
+}
+
+.text-success-dark-1 {
+  color: #157147;
+}
+
+.bg-success-dark-1 {
+  background-color: #157147;
+}
+
+.text-success-dark-2 {
+  color: #115c39;
+}
+
+.bg-success-dark-2 {
+  background-color: #115c39;
+}
+
+.text-success-dark-3 {
+  color: #0d462c;
+}
+
+.bg-success-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success-light-3 {
+  color: #59e0a1;
+}
+
+.bg-success-light-3 {
+  background-color: #59e0a1;
+}
+
+.text-success-dark-1 {
+  color: #157147;
+}
+
+.bg-success-dark-1 {
+  background-color: #157147;
+}
+
+.text-success-dark-2 {
+  color: #115c39;
+}
+
+.bg-success-dark-2 {
+  background-color: #115c39;
+}
+
+.text-success-dark-3 {
+  color: #0d462c;
+}
+
+.bg-success-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-secondary {
+  color: #198754;
+}
+
+.bg-secondary {
+  background-color: #198754;
+}
+
+.text-secondary-light-1 {
+  color: #21b26f;
+}
+
+.bg-secondary-light-1 {
+  background-color: #21b26f;
+}
+
+.text-secondary-dark-1 {
+  color: #157147;
+}
+
+.bg-secondary-dark-1 {
+  background-color: #157147;
+}
+
+.text-secondary-dark-2 {
+  color: #115c39;
+}
+
+.bg-secondary-dark-2 {
+  background-color: #115c39;
+}
+
+.text-secondary-dark-3 {
+  color: #0d462c;
+}
+
+.bg-secondary-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-secondary-light-2 {
+  color: #2ed889;
+}
+
+.bg-secondary-light-2 {
+  background-color: #2ed889;
+}
+
+.text-secondary-dark-1 {
+  color: #157147;
+}
+
+.bg-secondary-dark-1 {
+  background-color: #157147;
+}
+
+.text-secondary-dark-2 {
+  color: #115c39;
+}
+
+.bg-secondary-dark-2 {
+  background-color: #115c39;
+}
+
+.text-secondary-dark-3 {
+  color: #0d462c;
+}
+
+.bg-secondary-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-secondary-light-3 {
+  color: #59e0a1;
+}
+
+.bg-secondary-light-3 {
+  background-color: #59e0a1;
+}
+
+.text-secondary-dark-1 {
+  color: #157147;
+}
+
+.bg-secondary-dark-1 {
+  background-color: #157147;
+}
+
+.text-secondary-dark-2 {
+  color: #115c39;
+}
+
+.bg-secondary-dark-2 {
+  background-color: #115c39;
+}
+
+.text-secondary-dark-3 {
+  color: #0d462c;
+}
+
+.bg-secondary-dark-3 {
+  background-color: #0d462c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-danger {
+  color: #ea162e;
+}
+
+.bg-danger {
+  background-color: #ea162e;
+}
+
+.text-danger-light-1 {
+  color: #ee4558;
+}
+
+.bg-danger-light-1 {
+  background-color: #ee4558;
+}
+
+.text-danger-dark-1 {
+  color: #d31329;
+}
+
+.bg-danger-dark-1 {
+  background-color: #d31329;
+}
+
+.text-danger-dark-2 {
+  color: #bc1124;
+}
+
+.bg-danger-dark-2 {
+  background-color: #bc1124;
+}
+
+.text-danger-dark-3 {
+  color: #a50f20;
+}
+
+.bg-danger-dark-3 {
+  background-color: #a50f20;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-danger-light-2 {
+  color: #f27482;
+}
+
+.bg-danger-light-2 {
+  background-color: #f27482;
+}
+
+.text-danger-dark-1 {
+  color: #d31329;
+}
+
+.bg-danger-dark-1 {
+  background-color: #d31329;
+}
+
+.text-danger-dark-2 {
+  color: #bc1124;
+}
+
+.bg-danger-dark-2 {
+  background-color: #bc1124;
+}
+
+.text-danger-dark-3 {
+  color: #a50f20;
+}
+
+.bg-danger-dark-3 {
+  background-color: #a50f20;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-danger-light-3 {
+  color: #f7a2ac;
+}
+
+.bg-danger-light-3 {
+  background-color: #f7a2ac;
+}
+
+.text-danger-dark-1 {
+  color: #d31329;
+}
+
+.bg-danger-dark-1 {
+  background-color: #d31329;
+}
+
+.text-danger-dark-2 {
+  color: #bc1124;
+}
+
+.bg-danger-dark-2 {
+  background-color: #bc1124;
+}
+
+.text-danger-dark-3 {
+  color: #a50f20;
+}
+
+.bg-danger-dark-3 {
+  background-color: #a50f20;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.text-warning-light-1 {
+  color: #ffce3a;
+}
+
+.bg-warning-light-1 {
+  background-color: #ffce3a;
+}
+
+.text-warning-dark-1 {
+  color: #edb100;
+}
+
+.bg-warning-dark-1 {
+  background-color: #edb100;
+}
+
+.text-warning-dark-2 {
+  color: #d39e00;
+}
+
+.bg-warning-dark-2 {
+  background-color: #d39e00;
+}
+
+.text-warning-dark-3 {
+  color: #ba8b00;
+}
+
+.bg-warning-dark-3 {
+  background-color: #ba8b00;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-warning-light-2 {
+  color: #ffdb6d;
+}
+
+.bg-warning-light-2 {
+  background-color: #ffdb6d;
+}
+
+.text-warning-dark-1 {
+  color: #edb100;
+}
+
+.bg-warning-dark-1 {
+  background-color: #edb100;
+}
+
+.text-warning-dark-2 {
+  color: #d39e00;
+}
+
+.bg-warning-dark-2 {
+  background-color: #d39e00;
+}
+
+.text-warning-dark-3 {
+  color: #ba8b00;
+}
+
+.bg-warning-dark-3 {
+  background-color: #ba8b00;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-warning-light-3 {
+  color: #ffe7a0;
+}
+
+.bg-warning-light-3 {
+  background-color: #ffe7a0;
+}
+
+.text-warning-dark-1 {
+  color: #edb100;
+}
+
+.bg-warning-dark-1 {
+  background-color: #edb100;
+}
+
+.text-warning-dark-2 {
+  color: #d39e00;
+}
+
+.bg-warning-dark-2 {
+  background-color: #d39e00;
+}
+
+.text-warning-dark-3 {
+  color: #ba8b00;
+}
+
+.bg-warning-dark-3 {
+  background-color: #ba8b00;
+}
+
+.text-white {
+  color: #fff;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  font-size: 19px;
+}
+nav a:last-child {
+  color: yellow;
+}
+nav a:nth-child(2) {
+  color: blue;
+}
+nav a:hover {
+  color: green;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  color: blue;
+}
+
+h1 {
+  color: #0d6efd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-success {
+  background-color: #0d6efd;
+}
+
+.btn-danger {
+  background-color: #198754;
+}
+
+.btn-secondary {
+  background-color: #f8061e;
+}
+
+.button-primary {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: alias;
+}
+.button-primary:hover {
+  background-color: darkblue(#3498db, 11%);
+}
+
+.box-if {
+  height: 333px;
+  width: 232px;
+  background-color: #333;
+  padding: 10px;
+  color: red;
+  background-color: aqua;
+  border-radius: 12px;
+}
+
+.title {
+  font-family: arial;
+  font-size: 2rem;
+  line-height: normal;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.para {
+  font-family: arial;
+  font-size: 2rem;
+  line-height: normal;
+  color: yellow;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.button-success {
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.button-success:hover {
+  background-color: #0255d0;
+}
+
+.button-secondary {
+  background-color: #345;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.button-secondary:hover {
+  background-color: #1e2832;
+}
+
+.button-danger {
+  background-color: #453;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+.button-danger:hover {
+  background-color: #28321e;
+}
+
+/*
+$padding:5px;
+$utilities:(
+    "padding":(
+        "prefix":"p"
+        "value"(
+            "0":0,
+            "1":$padding*2,
+            "2":$padding*4,
+            "3":$padding*6,
+        )
+    )
+    "padding-left"(
+        "prefix":"p"
+        "value"(
+            "0":0,
+            "1":$padding*2,
+            "2":$padding*4,
+            "3":$padding*6,
+        )
+    )
+);
+@each $property,$map in $utilities{
+    $prefix:map-get($map: prefix, $key:prefix );
+    @debug $prefix
+}
+*/
+.border {
+  border: 1px solid blue;
+  padding: 5px;
+  color: red;
+  font-size: large;
+}
+
+/*# sourceMappingURL=style.css.map */
